@@ -1,0 +1,79 @@
+@keyframes bgcolor {
+    0% {
+        background-color: rgba(69,163,229, 0.5)
+    }
+    30% {
+        background-color: rgba(102,191,57, 0.5)
+    }
+    60% {
+        background-color: rgba(235,103,15, 0.5)
+    }
+    100% {
+        background-color: rgba(134,76,191, 0.5)
+    }
+}
+
+body {/*
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: cyclic;
+    animation-direction: alternate;*/
+    background-color: rgba(165, 145, 207, 0.4);
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  empty-cells: hide;
+}
+
+table th {
+  padding: 10px 16px;
+}
+
+form, button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px solid black;
+  margin: -1px;
+  background-color: rgba(245, 245, 245, 0.7);
+}
+
+label {
+  margin: 5px;
+}
+
+th.red {
+  background-color: rgba(256, 99, 99, .8);
+}
+th.green {
+  background-color: lightgreen;
+}
+th.jolly {
+  box-shadow: inset 0px 0px 0px 4px yellow;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button, input {
+  background: rgba(200, 160, 250, .1);
+  padding: 5px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+}
+
+button:hover, input[type=submit]:hover {
+  cursor: pointer;
+}
+button:hover, input:hover {
+  background-color: rgba(165, 145, 207, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
